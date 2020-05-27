@@ -1,16 +1,24 @@
 <template>
   <div id="app">
     <Navbar name="Kathy" />
+    <SectionBanner name="Video Player" />
   </div>
 </template>
 
 <script>
+// Import BootstrapVue
+import Vue from 'vue'
+import { BootstrapVue } from 'bootstrap-vue'
+
+// Import Custom Components
 import Navbar from './components/Navbar.vue'
+import SectionBanner from './components/SectionBanner.vue'
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    SectionBanner
   }
 }
 </script>
