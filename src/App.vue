@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navbar />
+    <Navbar name="Kathy" />
   </div>
 </template>
 
@@ -16,7 +16,9 @@ export default {
 </script>
 
 <style lang="scss">
+// Import Custom Fonts
+@import url('../src/css/fonts/stylesheet.css');
 #app {
-
+  height: 100vh;
 }
 </style>
