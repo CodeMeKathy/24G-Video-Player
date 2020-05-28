@@ -14,6 +14,8 @@ import { BootstrapVue } from 'bootstrap-vue'
 import Navbar from './components/Navbar.vue'
 import SectionBanner from './components/SectionBanner.vue'
 
+Vue.use(BootstrapVue)
+
 export default {
   name: 'App',
   components: {

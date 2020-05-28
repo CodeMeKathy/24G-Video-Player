@@ -1,7 +1,6 @@
 <template>
   <div class="navbar">
     <h1 class="navbar-title">
-      <!-- Name is hardcoded in App.vue and passed down as a prop -->
       Welcome, <span class="navbar-title-name">{{ name }}</span>
     </h1>
   </div>
@@ -27,12 +26,24 @@ export default {
     color: #ffffffa8;
     font-weight: 100;
     align-self: center;
-    padding-left: 1rem;
+    padding-left: 2.5rem;
     margin-block-end: 0;
 
     &-name {
       font-family: 'brandon_grotesquemedium';
       color: #ffffff;
+    }
+  }
+}
+
+//! Media Queries
+
+/* Mobile Phones */
+@media (max-width: 767px) and (min-width: 320px) {
+  .navbar {
+    height: 5.5rem;
+    &-title {
+      padding-left: 0.5rem;
     }
   }
 }
