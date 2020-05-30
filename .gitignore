@@ -1,5 +1,4 @@
 .DS_Store
-node_modules
 /dist
 
 # local env files
@@ -10,7 +9,6 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
 
 # Editor directories and files
 .idea
@@ -20,3 +18,17 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# === Rule for dotfiles ===
+# Ignore all dotfiles.
+.*
+# Exclude specific dotfiles that we want to track.
+!.gitignore
+
+
+# === Rules for `node_modules` ===
+node_modules
+!**/node_modules/**
+/node_modules
+/tools/doc/node_modules
+/tools/clang-format/node_modules
