@@ -36,30 +36,40 @@ This project uses [NodeJS](http://nodejs.org) and [NPM](https://npmjs.com). To c
 
 ### Dev Dependencies
 
+- [Vue CLI](https://cli.vuejs.org)
+- [Bootstrap](https://getbootstrap.com)
+- [BootstrapVue](https://bootstrap-vue.org)
+- [Node Sass](https://www.npmjs.com/package/node-sass)
+- [Sass Loader](https://www.npmjs.com/package/sass-loader)
 - [Express](https://www.npmjs.com/package/express)
 - [CORS](https://www.npmjs.com/package/cors)
 - [Nodemon](https://nodemon.io)
 - [Mongoose](https://mongoosejs.com/)
+- [Vue2 Timeago](https://github.com/runkids/vue2-timeago)
 
 ## 🛠️ Technologies Used
 
+- [Vue CLI](https://cli.vuejs.org)
 - [HTML](https://www.w3.org/TR/html52/)
 - [CSS](https://www.w3.org/Style/CSS/)
 - [Bootstrap](https://getbootstrap.com)
 - [BootstrapVue](https://bootstrap-vue.org)
+- [Node Sass](https://www.npmjs.com/package/node-sass)
+- [Sass Loader](https://www.npmjs.com/package/sass-loader)
 - [JavaScript](https://www.javascript.com/)
 - [Express](https://www.express.com/)
 - [CORS](https://www.npmjs.com/package/cors)
 - [NodeJS](https://nodejs.org/)
 - [Nodemon](https://nodemon.io)
 - [Mongoose](https://mongoosejs.com/)
+- [Vue2 Timeago](https://github.com/runkids/vue2-timeago)
 - [Insomnia](https://insomnia.rest)
 - [Real Favicon Generator](https://realfavicongenerator.net)
 - [Draw.io](https://draw.io)
 
 ## 📄 Database Schema
 
-![Mobile Layouts](https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/24G%20Video%20Player%20DB%20Schema.png?raw=true 'Mobile Layouts')
+![Mobile Layouts](https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/24G%20Video%20Player%20DB%20Schema.png?raw=true 'Database Video Schema')
 
 ## 📄 License
 
