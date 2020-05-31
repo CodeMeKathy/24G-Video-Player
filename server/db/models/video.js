@@ -7,7 +7,7 @@ const videoSchema = new Schema({
   title: { type: String, required: true },
   thumb: { type: String, required: true },
   comments: [
-    { userName: String, userIcon: String, body: String, dateCreated: Date }
+    { user: String, userIcon: String, body: String, dateCreated: Date }
   ],
   meta: {
     views: Number,
@@ -16,6 +16,6 @@ const videoSchema = new Schema({
   }
 })
 
-const Video = mongoose.model('Video', videoSchema)
+mongoose.model('Video', videoSchema)
 
-module.exports = Video
+module.exports = mongoose

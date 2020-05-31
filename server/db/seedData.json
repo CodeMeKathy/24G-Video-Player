@@ -1,17 +1,83 @@
 [
   {
+    "meta": {
+      "likes": 36,
+      "views": 196,
+      "dislikes": 4
+    },
     "title": "Who is 24G?",
     "video": "https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/who_is_24g.mp4",
-    "thumb": "https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/who_is_24g.jpg"
+    "thumb": "https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/who_is_24g.jpg",
+    "comments": [
+      {
+        "user": "David Jakowenko",
+        "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
+        "body": "Euismod tincidunt ut laireet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!"
+      },
+      {
+        "user": "Lisa Wadenstorer",
+        "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
+        "body": "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
+      },
+      {
+        "user": "Scott Wiemels",
+        "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
+        "body": "Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!"
+      }
+    ]
   },
   {
+    "meta": {
+      "likes": 70,
+      "views": 223,
+      "dislikes": 14
+    },
     "title": "CES Overview",
     "video": "https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/ces_overview.mp4",
-    "thumb": "https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/ces_overview.jpg"
+    "thumb": "https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/ces_overview.jpg",
+    "comments": [
+      {
+        "user": "David Jakowenko",
+        "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
+        "body": "Euismod tincidunt ut laireet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!"
+      },
+      {
+        "user": "Lisa Wadenstorer",
+        "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
+        "body": "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
+      },
+      {
+        "user": "Scott Wiemels",
+        "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
+        "body": "Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!"
+      }
+    ]
   },
   {
+    "meta": {
+      "views": 455,
+      "likes": 89,
+      "dislikes": 5
+    },
     "title": "Future of Drones",
     "video": "https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/future_of_drones.mp4",
-    "thumb": "https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/future_of_drones.jpg"
+    "thumb": "https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/future_of_drones.jpg",
+    "comments": [
+      {
+        "user": "David Jakowenko",
+        "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
+        "body": "Euismod tincidunt ut laireet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!"
+      },
+      {
+        "user": "Lisa Wadenstorer",
+        "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
+        "body": "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
+      },
+      {
+        "user": "Scott Wiemels",
+        "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
+        "body": "Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!"
+      }
+    ]
   }
 ]

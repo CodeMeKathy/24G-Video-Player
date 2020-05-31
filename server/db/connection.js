@@ -9,7 +9,7 @@ try {
   handleError(error)
 }
 // Error handle method
-const handleError = error => {
+function handleError(error) {
   console.error('Error occurred while attempting to connect', error)
 }
 
