@@ -1,3 +1,4 @@
+    "@vue/cli-service": "~4.4.0",
 {
   "name": "24g-video-player",
   "version": "0.1.0",
