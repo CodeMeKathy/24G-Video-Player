@@ -71,28 +71,30 @@ export default {
       if (response.ok && updatedVideo)
         Object.assign(this.currentVideo, updatedVideo)
 
-      // replace the currentVideo in the videos array after any updating
+      // Replace the currentVideo in the videos array after any updating
+      let videoToSwap = this.videos.find(
+        video => video._id === this.currentVideo._id
+      )
+      let videoToSwapIndex = this.videos.indexOf(videoToSwap)
+      console.log('currentVideoIndex', videoToSwapIndex)
+      this.videos.splice(videoToSwapIndex, 1, updatedVideo)
     },
-    // increment likes
+    // Increment likes
     incrementLikes() {
-      // (add one to the likes property for the currentVideo)
       this.currentVideo.meta.likes += 1
 
-      // (persist to DB)
       this.updateVideo(JSON.stringify(this.currentVideo))
     },
-    // increment dislikes
+    // Increment dislikes
     incrementDislikes() {
-      // (add one to the likes property for the currentVideo)
       this.currentVideo.meta.dislikes += 1
-
-      // (persist to DB)
       this.updateVideo(JSON.stringify(this.currentVideo))
     },
     changeCurrentVideo(event) {
       this.currentVideo = this.videos.find(
         video => video.thumb === event.target.src
       )
+      // Increment video views
       this.currentVideo.meta.views += 1
       this.updateVideo(JSON.stringify(this.currentVideo))
     },
@@ -100,7 +102,7 @@ export default {
       event.preventDefault()
 
       const form = event.target
-      const formData = new FormData(form) // (get all named inputs in form)
+      const formData = new FormData(form)
       let user = ''
       let body = ''
 

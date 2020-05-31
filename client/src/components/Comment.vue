@@ -12,6 +12,14 @@
       <b-col lg="9" sm="5" class="comment-container-div-details">
         <b-row class="comment-container-stats">
           <h5 class="comment-container-user-name">{{ user }}</h5>
+          <h5 class="comment-container-timestamp" v-if="dateCreated">
+            <time-ago
+              :datetime="dateCreated"
+              :refresh=true
+              :tooltip=true
+              long
+            ></time-ago>
+          </h5>
         </b-row>
         <b-row class="comment-container-comment-row">
           <p class="comment-container-comment">{{ comment }}</p>
@@ -22,9 +30,16 @@
 </template>
 
 <script>
+// Import Vue2-Timeago NPM Package
+// Source: https://www.npmjs.com/package/vue2-timeago
+import TimeAgo from 'vue2-timeago'
+
 export default {
   name: 'Comment',
-  props: ['user', 'icon', 'comment']
+  components: {
+    'time-ago': TimeAgo
+  },
+  props: ['user', 'icon', 'comment', 'dateCreated'],
 }
 </script>
 

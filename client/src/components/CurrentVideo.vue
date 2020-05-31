@@ -19,6 +19,8 @@
     <b-row class="comments-div">
       <b-form @submit="addComment">
         <b-form-textarea
+          name="user-comment"
+          required
           id="textarea"
           placeholder="Type up a sweet comment..."
           rows="3"
@@ -28,6 +30,7 @@
         />
         <b-form-input
           name="user-name"
+          required
           v-model="form.user"
           placeholder="Enter your username"
         >
