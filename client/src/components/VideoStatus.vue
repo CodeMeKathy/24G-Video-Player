@@ -5,13 +5,21 @@
       <div class="current-video-div">
         <b-col class="current-video-votes">
           <a href="#">
-            <img src="../assets/thumbs_up.svg" alt="thumbs up" />
+            <img
+              @click="incrementLikes"
+              src="../assets/thumbs_up.svg"
+              alt="thumbs up"
+            />
           </a>
           {{ likes }}
         </b-col>
         <b-col class="current-video-votes">
           <a href="#">
-            <img src="../assets/thumbs_down.svg" alt="thumbs_down" />
+            <img
+              @click="incrementDislikes"
+              src="../assets/thumbs_down.svg"
+              alt="thumbs_down"
+            />
           </a>
           {{ dislikes }}
         </b-col>
@@ -23,7 +31,7 @@
 <script>
 export default {
   name: 'VideoStatus',
-  props: ['likes', 'dislikes', 'views']
+  props: ['likes', 'dislikes', 'views', 'incrementLikes', 'incrementDislikes']
 }
 </script>
 

@@ -3,10 +3,12 @@
     <b-row>
       <b-col xl="9" lg="9">
         <current-video
-          :key="currentVideo.title"
           v-if="Object.keys(currentVideo).length > 0"
+          :key="currentVideo.title"
           :video="currentVideo"
-          :api="api"
+          :addComment="addComment"
+          :incrementLikes="incrementLikes"
+          :incrementDislikes="incrementDislikes"
         />
       </b-col>
 
@@ -53,10 +55,66 @@ export default {
     }
   },
   methods: {
-    // TODO: Add Comment
+    async updateVideo(body) {
+      const response = await fetch(`${this.api}${this.currentVideo._id}`, {
+        method: 'PUT',
+        mode: 'cors',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body
+      })
+
+      const jsonData = await response.json()
+      const updatedVideo = jsonData.video
+
+      if (response.ok && updatedVideo)
+        Object.assign(this.currentVideo, updatedVideo)
+
+      // replace the currentVideo in the videos array after any updating
+    },
+    // increment likes
+    incrementLikes() {
+      // (add one to the likes property for the currentVideo)
+      this.currentVideo.meta.likes += 1
+
+      // (persist to DB)
+      this.updateVideo(JSON.stringify(this.currentVideo))
+    },
+    // increment dislikes
+    incrementDislikes() {
+      // (add one to the likes property for the currentVideo)
+      this.currentVideo.meta.dislikes += 1
+
+      // (persist to DB)
+      this.updateVideo(JSON.stringify(this.currentVideo))
+    },
     changeCurrentVideo(event) {
       this.currentVideo = this.videos.find(
         video => video.thumb === event.target.src
+      )
+      this.currentVideo.meta.views += 1
+      this.updateVideo(JSON.stringify(this.currentVideo))
+    },
+    addComment(event) {
+      event.preventDefault()
+
+      const form = event.target
+      const formData = new FormData(form) // (get all named inputs in form)
+      let user = ''
+      let body = ''
+
+      for (const [inputName, value] of formData) {
+        if (inputName === 'user-name') user = value
+        if (inputName === 'user-comment') body = value
+      }
+
+      let newComment = { user, body, dateCreated: Date.now() }
+
+      this.updateVideo(
+        JSON.stringify({
+          comments: [...this.currentVideo.comments, newComment]
+        })
       )
     }
   }
