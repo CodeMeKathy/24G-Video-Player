@@ -11,11 +11,13 @@
         :views="video.meta.views"
         :likes="video.meta.likes"
         :dislikes="video.meta.dislikes"
+        :incrementLikes="incrementLikes"
+        :incrementDislikes="incrementDislikes"
       />
     </b-row>
     <h5 class="comments-heading">Comments</h5>
     <b-row class="comments-div">
-      <b-form @submit="onSubmit">
+      <b-form @submit="addComment">
         <b-form-textarea
           id="textarea"
           placeholder="Type up a sweet comment..."
@@ -45,17 +47,19 @@
 <script>
 // Import Custom Components
 import VideoStatus from './VideoStatus.vue'
+import CommentsContainer from './CommentsContainer'
 
 export default {
   name: 'CurrentVideo',
   components: {
-    'video-status': VideoStatus
+    'video-status': VideoStatus,
+    'comments-container': CommentsContainer
   },
-  props: ['video'],
+  props: ['video', 'addComment', 'incrementLikes', 'incrementDislikes'],
 
   data() {
     return {
-      form: { newComment: '' }
+      form: { user: '', newComment: '' }
     }
   }
 }

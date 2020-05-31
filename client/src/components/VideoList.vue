@@ -92,9 +92,6 @@ div.video-list-col.col-lg-3 {
 
 // XL Desktop
 @media (min-width: 1440px) {
-  // div.row.video-list-row-container {
-  //   // margin-left: -80rem !important;
-  // }
   .video-list {
     &-sm-video {
       width: 18rem;
