@@ -18,8 +18,8 @@ Build a fully responsive micro-website to play videos using the Vue.js CLI and f
 
 ### 💻 Tech Stack
 
-- _Frontend:_ [HTML](https://www.w3.org/TR/html52/), [CSS](https://www.w3.org/Style/CSS/), [BootstrapVue](https://bootstrap-vue.org) and [JavaScript](https://www.javascript.com/)
-- _Backend:_ [Express](https://www.express.com/)
+- _Frontend:_ A video player created with the [Vue CLI and framework](https://cli.vuejs.org), [JavaScript](https://www.javascript.com/), [BootstrapVue](https://bootstrap-vue.org), [Node Sass](https://www.npmjs.com/package/node-sass), [HTML](https://www.w3.org/TR/html52/), and [CSS](https://www.w3.org/Style/CSS/).
+- _Backend:_ A RESTFUL API built with [Express](https://www.express.com/), [CORS](https://www.npmjs.com/package/cors), [NodeJS](https://nodejs.org/), and [Mongoose](https://mongoosejs.com/).
 
 ## ⏳ Project Status
 
