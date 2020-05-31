@@ -6,7 +6,6 @@ const Schema = mongoose.Schema
 const videoSchema = new Schema({
   title: { type: String, required: true },
   thumb: { type: String, required: true },
-  src: { type: String },
   comments: [
     { userName: String, userIcon: String, body: String, dateCreated: Date }
   ],
