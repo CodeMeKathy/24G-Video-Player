@@ -12,9 +12,9 @@
 
 Build a fully responsive micro-website to play videos using the Vue.js CLI and framework. Store all likes, comments, and views within a local database. Create a database schema and utilize a REST API with ExpressJS to consume external video data. Design according to the following desktop and mobile layouts.
 
-![Desktop Layouts](https://github.com/CodeMeKathy/24G-Video-Player/blob/master/src/assets/comp_desktop.png?raw=true 'Desktop Layouts')
+![Desktop Layouts](https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/comp_desktop.png?raw=true 'Desktop Layouts')
 
-![Mobile Layouts](https://github.com/CodeMeKathy/24G-Video-Player/blob/master/src/assets/comp_mobile.png?raw=true 'Mobile Layouts')
+![Mobile Layouts](https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/comp_mobile.png?raw=true 'Mobile Layouts')
 
 ### 💻 Tech Stack
 
@@ -59,7 +59,7 @@ This project uses [NodeJS](http://nodejs.org) and [NPM](https://npmjs.com). To c
 
 ## 📄 Database Schema
 
-![Mobile Layouts](https://github.com/CodeMeKathy/24G-Video-Player/blob/master/src/assets/24G%20Video%20Player%20DB%20Schema.png?raw=true 'Mobile Layouts')
+![Mobile Layouts](https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/24G%20Video%20Player%20DB%20Schema.png?raw=true 'Mobile Layouts')
 
 ## 📄 License
 
