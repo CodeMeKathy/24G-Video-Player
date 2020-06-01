@@ -1,5 +1,4 @@
 <template>
- 
   <b-container fluid class="video-container bv-example-row">
     <b-row class="video-container-row">
       <b-col xl="9" lg="9" class="video-container-col-1">
@@ -11,7 +10,6 @@
           :incrementLikes="incrementLikes"
           :incrementDislikes="incrementDislikes"
         />
-        
       </b-col>
 
       <b-col class="video-container-col-1">
@@ -126,9 +124,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-* {
-  border: 1.5px solid plum;
-}
 .video-container {
   margin: 0 auto;
   font-family: 'brandon_grotesquemedium';

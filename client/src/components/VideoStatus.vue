@@ -38,9 +38,8 @@ export default {
 <style scoped lang="scss">
 .current-video-status {
   display: flex;
-  margin: 0;
   &-row {
-    width: 46rem;
+    width: 44rem;
   }
 }
 
@@ -50,7 +49,8 @@ export default {
     flex-direction: row;
   }
   &-views {
-    padding: 0;
+    // padding: 0;
+    margin-left: 1.4rem;
   }
   &-votes {
     width: 5.5rem;

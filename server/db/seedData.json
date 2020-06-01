@@ -1,9 +1,9 @@
 [
   {
     "meta": {
-      "likes": 36,
-      "views": 196,
-      "dislikes": 4
+      "likes": 50,
+      "views": 207,
+      "dislikes": 7
     },
     "title": "Who is 24G?",
     "video": "https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/who_is_24g.mp4",
@@ -12,25 +12,28 @@
       {
         "user": "David Jakowenko",
         "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
-        "body": "Euismod tincidunt ut laireet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!"
+        "body": "Euismod tincidunt ut laireet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!",
+        "dateCreated": "2020-05-29T02:53:50.974Z"
       },
       {
         "user": "Lisa Wadenstorer",
         "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
-        "body": "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
+        "body": "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+        "dateCreated": "2020-05-29T02:53:50.974Z"
       },
       {
         "user": "Scott Wiemels",
         "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
-        "body": "Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!"
+        "body": "Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!",
+        "dateCreated": "2020-05-29T02:53:50.974Z"
       }
     ]
   },
   {
     "meta": {
-      "likes": 70,
-      "views": 223,
-      "dislikes": 14
+      "likes": 72,
+      "views": 242,
+      "dislikes": 15
     },
     "title": "CES Overview",
     "video": "https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/ces_overview.mp4",
@@ -39,24 +42,27 @@
       {
         "user": "David Jakowenko",
         "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
-        "body": "Euismod tincidunt ut laireet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!"
+        "body": "Euismod tincidunt ut laireet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!",
+        "dateCreated": "2020-05-29T02:53:50.974Z"
       },
       {
         "user": "Lisa Wadenstorer",
         "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
-        "body": "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
+        "body": "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+        "dateCreated": "2020-05-29T02:53:50.974Z"
       },
       {
         "user": "Scott Wiemels",
         "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
-        "body": "Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!"
+        "body": "Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!",
+        "dateCreated": "2020-05-29T02:53:50.974Z"
       }
     ]
   },
   {
     "meta": {
-      "views": 455,
-      "likes": 89,
+      "views": 470,
+      "likes": 90,
       "dislikes": 5
     },
     "title": "Future of Drones",
@@ -66,17 +72,20 @@
       {
         "user": "David Jakowenko",
         "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
-        "body": "Euismod tincidunt ut laireet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!"
+        "body": "Euismod tincidunt ut laireet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!",
+        "dateCreated": "2020-05-29T02:53:50.974Z"
       },
       {
         "user": "Lisa Wadenstorer",
         "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
-        "body": "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
+        "body": "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+        "dateCreated": "2020-05-29T02:53:50.974Z"
       },
       {
         "user": "Scott Wiemels",
         "userIcon": "https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/placeholder_avatar.png?raw=true",
-        "body": "Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!"
+        "body": "Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enium ad minim veniam, quis nostrud exerci tation!",
+        "dateCreated": "2020-05-29T02:53:50.974Z"
       }
     ]
   }
