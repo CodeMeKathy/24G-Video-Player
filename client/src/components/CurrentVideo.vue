@@ -17,7 +17,7 @@
     </b-row>
     <h5 class="comments-heading">Comments</h5>
     <b-row class="comments-div">
-      <b-form @submit="addComment">
+      <b-form @submit="addComment" class="comments-form">
         <b-form-textarea
           name="user-comment"
           required
@@ -33,6 +33,7 @@
           required
           v-model="form.user"
           placeholder="Enter your username"
+          class="comments-input"
         >
         </b-form-input>
         <b-button type="submit" class="comments-btn" squared>
@@ -69,6 +70,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+video.current-video-lg-video {
+  width: 43rem;
+  height: 28rem;
+}
+div.videoContainer-votes.col {
+  width: 0.5rem;
+}
 .current-video {
   font-family: 'brandon_grotesquemedium';
   display: flex;
@@ -79,21 +87,17 @@ export default {
     justify-content: space-between;
   }
 }
-video.current-video-lg-video {
-  width: 43rem;
-  height: 28rem;
-}
-div.videoContainer-votes.col {
-  width: 0.5rem;
-}
 .comments {
   font-family: 'brandon_grotesquemedium';
   display: flex;
   flex-direction: column;
   padding: 2rem 0 0 0;
+  &-heading {
+    margin: 1.5rem 0 1.25rem -1rem;
+  }
   &-textarea {
-    margin-left: 1rem;
-    max-width: 43.5rem;
+    margin-left: 0rem;
+    width: 43rem;
   }
   &-btn {
     max-width: 11rem;
@@ -198,11 +202,8 @@ div.videoContainer-votes.col {
     }
     &-textarea {
       margin: 0;
-      width: 85rem;
+      width: 61.5rem;
     }
-  }
-  #textarea {
-    max-width: 65.2rem;
   }
 }
 
@@ -226,7 +227,7 @@ div.videoContainer-votes.col {
     }
     &-textarea {
       margin: 0;
-      width: 90rem;
+      width: 80rem;
     }
   }
 }

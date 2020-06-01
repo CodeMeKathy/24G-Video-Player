@@ -1,7 +1,8 @@
 <template>
+ 
   <b-container fluid class="video-container bv-example-row">
-    <b-row>
-      <b-col xl="9" lg="9">
+    <b-row class="video-container-row">
+      <b-col xl="9" lg="9" class="video-container-col-1">
         <current-video
           v-if="Object.keys(currentVideo).length > 0"
           :key="currentVideo.title"
@@ -10,9 +11,10 @@
           :incrementLikes="incrementLikes"
           :incrementDislikes="incrementDislikes"
         />
+        
       </b-col>
 
-      <b-col>
+      <b-col class="video-container-col-1">
         <video-list
           v-if="videos.length > 0"
           :videos="videos"
@@ -76,7 +78,6 @@ export default {
         video => video._id === this.currentVideo._id
       )
       let videoToSwapIndex = this.videos.indexOf(videoToSwap)
-      console.log('currentVideoIndex', videoToSwapIndex)
       this.videos.splice(videoToSwapIndex, 1, updatedVideo)
     },
     // Increment likes
@@ -98,6 +99,7 @@ export default {
       this.currentVideo.meta.views += 1
       this.updateVideo(JSON.stringify(this.currentVideo))
     },
+    // Add comment
     addComment(event) {
       event.preventDefault()
 
@@ -124,6 +126,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+* {
+  border: 1.5px solid plum;
+}
 .video-container {
   margin: 0 auto;
   font-family: 'brandon_grotesquemedium';
