@@ -15,8 +15,8 @@
           <h5 class="comment-container-timestamp" v-if="dateCreated">
             <time-ago
               :datetime="dateCreated"
-              :refresh=true
-              :tooltip=true
+              :refresh="true"
+              :tooltip="true"
               long
             ></time-ago>
           </h5>
@@ -39,35 +39,32 @@ export default {
   components: {
     'time-ago': TimeAgo
   },
-  props: ['user', 'icon', 'comment', 'dateCreated'],
+  props: ['user', 'icon', 'comment', 'dateCreated']
 }
 </script>
 
 <style scoped lang="scss">
-div.comment-container-div-icon.col-lg-2 {
-  width: 4rem !important;
-}
 .comment-container {
   height: max-content;
   display: flex;
-  // height: 6rem;
+
   margin-left: 0;
   margin-top: 1rem;
   &-div-icon {
-    // width: 1rem;
-    margin: 0;
+    width: 0.5rem;
   }
   &-user-icon {
     width: 5rem;
   }
   &-div-details {
-    width: 40rem;
+    width: 44rem;
   }
   &-timestamp {
     font-family: 'brandon_grotesquelight';
     padding-left: 0.5rem;
-    color: #c3c3c3;
+    color: #ebebeb;
     font-size: 1.2rem;
+    font-weight: 200;
   }
   &-comment {
     font-family: 'brandon_grotesquelight';
@@ -79,14 +76,14 @@ div.comment-container-div-icon.col-lg-2 {
 // Mobile Small
 @media (max-width: 374px) and (min-width: 320px) {
   .comment-container {
-    height: 12rem;
+    height: max-content;
+    margin-top: 1rem;
     &-user-icon {
       width: 3.5rem;
     }
     &-stats {
       flex-direction: column;
       font-size: 1rem;
-      margin-top: -3.5rem;
       align-content: space-evenly;
       margin-left: 1rem;
     }
@@ -104,6 +101,9 @@ div.comment-container-div-icon.col-lg-2 {
       margin: 0.5rem 0 0 5rem;
       align-content: space-evenly;
     }
+    &-row {
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -111,13 +111,15 @@ div.comment-container-div-icon.col-lg-2 {
 @media (width: 375px) {
   .comment-container {
     height: 12rem;
+    &-div-icon {
+      width: 4rem;
+    }
     &-user-icon {
-      width: 3.5rem;
+      width: 4rem;
     }
     &-stats {
       flex-direction: column;
       font-size: 1rem;
-
       margin-left: 1rem;
     }
     &-div-details {
@@ -137,12 +139,15 @@ div.comment-container-div-icon.col-lg-2 {
   }
 }
 
-// Mobile Medium - Large
+// Mobile Large
 @media (max-width: 767px) and (min-width: 425px) {
   .comment-container {
     height: max-content;
     &-row {
       max-height: 17rem;
+    }
+    &-div-icon {
+      width: 4.5rem;
     }
     &-user-icon {
       width: 3.5rem;
@@ -155,7 +160,6 @@ div.comment-container-div-icon.col-lg-2 {
     &-div-details {
       width: 18rem;
     }
-
     &-timestamp {
       font-size: 1rem;
       padding-left: 0rem;
@@ -174,22 +178,28 @@ div.comment-container-div-icon.col-lg-2 {
       margin: 0 0 0 2rem;
       flex-wrap: nowrap;
     }
+    &-div-icon {
+      width: 3rem;
+    }
+    &-user-icon {
+      width: 4rem;
+    }
     &-div-details {
       width: 44rem;
     }
     &-user-name {
-      width: 50rem; //??
+      width: 60rem;
       padding-right: 0.5rem;
     }
     &-timestamp {
-      width: 35rem; //??
+      width: 35rem;
       font-size: 1rem;
       padding-left: 0rem;
     }
     &-comment {
       margin: 0.5rem 0 0 3rem;
       align-content: space-evenly;
-      width: 25rem !important;
+      width: 35rem;
     }
     &-comment-row {
       width: fit-content;
@@ -206,6 +216,33 @@ div.comment-container-div-icon.col-lg-2 {
     }
     &-div-details {
       width: 60rem;
+    }
+  }
+}
+
+// XXL Desktop
+@media (min-width: 2560px) {
+  .comment-container {
+    &-user-icon {
+      width: 6.5rem;
+    }
+    &-div-details {
+      margin-left: -1.5rem;
+    }
+    &-user-name {
+      font-size: 1.6rem;
+    }
+    &-timestamp {
+      font-size: 1.6rem;
+      font-family: 'brandon_grotesquelight';
+      font-weight: 200;
+    }
+    &-comment {
+      font-size: 1.6rem;
+      width: 75rem;
+    }
+    &-comment-row {
+      width: fit-content;
     }
   }
 }

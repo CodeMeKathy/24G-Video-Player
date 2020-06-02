@@ -16,11 +16,10 @@
 </template>
 
 <script>
-// Import Custom Components
 import Comment from './Comment'
 
 export default {
-  name: 'CommentsContainer',
+  name: 'CommentsList',
   components: {
     Comment
   },

@@ -1,103 +1,45 @@
 <template>
   <b-container class="current-video bv-example-row">
-    <h5 class="video-container-title" v-if="video._id">{{ video.title }}</h5>
     <b-row class="current-video-div">
       <video class="current-video-lg-video" :alt="video.title" controls>
         <source :src="video.video" type="video/mp4" />
       </video>
     </b-row>
-    <b-row>
-      <video-status
-        :views="video.meta.views"
-        :likes="video.meta.likes"
-        :dislikes="video.meta.dislikes"
-        :incrementLikes="incrementLikes"
-        :incrementDislikes="incrementDislikes"
-      />
-    </b-row>
-    <h5 class="comments-heading">Comments</h5>
-    <b-row class="comments-div">
-      <b-form @submit="addComment" class="comments-form">
-        <b-form-textarea
-          name="user-comment"
-          required
-          id="textarea"
-          placeholder="Type up a sweet comment..."
-          rows="3"
-          max-rows="6"
-          class="comments-textarea"
-          v-model="form.newComment"
-        />
-        <b-form-input
-          name="user-name"
-          required
-          v-model="form.user"
-          placeholder="Enter your username"
-          class="comments-input"
-        >
-        </b-form-input>
-        <b-button type="submit" class="comments-btn" squared>
-          add comment
-        </b-button>
-      </b-form>
-    </b-row>
-    <comments-container
-      v-if="Object.keys(video).length > 0"
-      :comments="video.comments"
-    />
   </b-container>
 </template>
 
 <script>
-// Import Custom Components
-import VideoStatus from './VideoStatus.vue'
-import CommentsContainer from './CommentsContainer'
-
 export default {
   name: 'CurrentVideo',
-  components: {
-    'video-status': VideoStatus,
-    'comments-container': CommentsContainer
-  },
-  props: ['video', 'addComment', 'incrementLikes', 'incrementDislikes'],
-
-  data() {
-    return {
-      form: { user: '', newComment: '' }
-    }
-  }
+  props: ['video']
 }
 </script>
 
 <style scoped lang="scss">
-video.current-video-lg-video {
-  width: 43rem;
-  height: 28rem;
-}
-div.videoContainer-votes.col {
-  width: 0.5rem;
-}
 .current-video {
   font-family: 'brandon_grotesquemedium';
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   color: #000000;
   &-div {
     justify-content: space-between;
   }
+}
+video.current-video-lg-video {
+  width: 43rem;
+  height: 26rem;
+}
+div.videoContainer-votes.col {
+  width: 0.5rem;
 }
 .comments {
   font-family: 'brandon_grotesquemedium';
   display: flex;
   flex-direction: column;
   padding: 2rem 0 0 0;
-  &-heading {
-    margin: 1.5rem 0 1.25rem -1rem;
-  }
   &-textarea {
-    margin-left: 0rem;
-    width: 43rem;
+    margin-left: 1rem;
+    max-width: 43.5rem;
   }
   &-btn {
     max-width: 11rem;
@@ -138,15 +80,6 @@ div.videoContainer-votes.col {
     width: 20rem;
     height: 10rem;
   }
-  .comments {
-    &-heading {
-      margin: 1.5rem 0 1.25rem -1rem;
-    }
-    &-textarea {
-      margin: 0;
-      width: 20rem;
-    }
-  }
 }
 
 // Mobile Large
@@ -157,15 +90,6 @@ div.videoContainer-votes.col {
   }
   div.current-video-next-videos.col {
     flex-direction: row;
-  }
-  .comments {
-    &-heading {
-      margin: 1.5rem 0 1.25rem -1rem;
-    }
-    &-textarea {
-      margin: 0;
-      width: 24rem;
-    }
   }
 }
 
@@ -202,8 +126,11 @@ div.videoContainer-votes.col {
     }
     &-textarea {
       margin: 0;
-      width: 61.5rem;
+      width: 85rem;
     }
+  }
+  #textarea {
+    max-width: 65.2rem;
   }
 }
 
@@ -219,6 +146,7 @@ div.videoContainer-votes.col {
   video.current-video-lg-video {
     height: 48rem;
     width: 85rem;
+    margin-left: 0;
   }
   .comments {
     &-heading {
@@ -227,7 +155,7 @@ div.videoContainer-votes.col {
     }
     &-textarea {
       margin: 0;
-      width: 80rem;
+      width: 90rem;
     }
   }
 }
