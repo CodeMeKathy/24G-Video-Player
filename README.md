@@ -6,68 +6,85 @@
  A  micro-website video player created with the Vue.js CLI and framework.
 </h4>
 
+<h5 align="center"> Live Site:
+  <a href="">https://24g-video-player.now.sh</a>
+</h5>
+
 ## Overview
 
 ### 💪 Challenge
 
-Build a fully responsive micro-website to play videos using the Vue.js CLI and framework. Store all likes, comments, and views within a local database. Create a database schema and utilize a REST API with ExpressJS to consume external video data. Design according to the following desktop and mobile layouts.
+Build a fully responsive micro-website to play videos using the Vue.js CLI and framework. Store all likes, comments, and views in a database. Create a REST API using ExpressJS to serve that data. Design according to the following desktop and mobile layouts:
 
-![Desktop Layouts](https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/comp_desktop.png?raw=true 'Desktop Layouts')
+![Desktop Layout](https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/comp_desktop.png?raw=true 'Desktop Layout')
 
-![Mobile Layouts](https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/comp_mobile.png?raw=true 'Mobile Layouts')
+![Mobile Layout](https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/comp_mobile.png?raw=true 'Mobile Layout')
 
 ### 💻 Tech Stack
 
-- _Frontend:_ A video player created with the [Vue CLI and framework](https://cli.vuejs.org), [JavaScript](https://www.javascript.com/), [BootstrapVue](https://bootstrap-vue.org), [Node Sass](https://www.npmjs.com/package/node-sass), [HTML](https://www.w3.org/TR/html52/), and [CSS](https://www.w3.org/Style/CSS/).
-- _Backend:_ A RESTFUL API built with [Express](https://www.express.com/), [CORS](https://www.npmjs.com/package/cors), [NodeJS](https://nodejs.org/), and [Mongoose](https://mongoosejs.com/).
+- _Frontend:_ A video player created with the [Vue CLI and framework](https://cli.vuejs.org), [BootstrapVue](https://bootstrap-vue.org), [Node Sass](https://www.npmjs.com/package/node-sass).
+- _Backend:_ A RESTFUL API built with [NodeJS](https://nodejs.org/), [Express](https://www.express.com/), [MongoDB](https://www.mongodb.com/), and [Mongoose](https://mongoosejs.com/).
+- _Deployment:_
+  - _Frontend:_ [24G Video Player](https://24g-video-player.now.sh) deployed via Vercel.
+  - _Backend:_ [24G Video Server](kl-24g-player-server.herokuapp.com/) deployed via Heroku.
 
 ## ⏳ Project Status
 
-This project is currently in development.
+The minimal viable product (MVP) requirements have been accomplished. Additional development is underway.
 
 ## 🚀 Getting Started
 
 ### Prerequisites 📋
 
-This project uses [NodeJS](http://nodejs.org) and [NPM](https://npmjs.com). To confirm if locally installed, enter into the terminal `node --version`, `npm --version`. If not locally installed, please the links below to conveniently access download instructions.
+This project uses [NodeJS](http://nodejs.org), [NPM](https://npmjs.com) and [MongDB](https://www.mongodb.com/). To confirm if locally installed, run these commands in the terminal: `node --version` or `npm --version` for NodeJS and `mongo --version` for MongoDB. If not locally installed, you will need to install these via [Homebrew](https://brew.sh/) (recommended) or check the links below for alternative download and install methods.
 
-- [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- [Nodejs](https://nodejs.org/en/download/)
+#### Homebrew Install
 
-### Dev Dependencies
+- Install Homebrew via the link above (if you do not have it already)
+- Run `brew install node` to install both NodeJS and NPM
+- Run `brew tap mongodb/brew` to add MongoDB's custom 'tap' ([More Info](https://github.com/mongodb/homebrew-brew))
+- Run `brew install mongo-community-shell` for the latest version of the Mongo CLI **only** or run `brew install mongodb-community` to install the latest MongoDB Community Server plus command line tools
+
+#### Homebrew Alternative Install
+
+- [NodeJS and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- [MongoDB](https://www.mongodb.com/download-center/shell)
+
+### 🔌 Dependencies
 
 - [Vue CLI](https://cli.vuejs.org)
 - [Bootstrap](https://getbootstrap.com)
 - [BootstrapVue](https://bootstrap-vue.org)
+- [Vue2 Timeago](https://github.com/runkids/vue2-timeago)
 - [Node Sass](https://www.npmjs.com/package/node-sass)
 - [Sass Loader](https://www.npmjs.com/package/sass-loader)
 - [Express](https://www.npmjs.com/package/express)
 - [CORS](https://www.npmjs.com/package/cors)
-- [Nodemon](https://nodemon.io)
+- [Helmet](https://www.npmjs.com/package/helmet)
 - [Mongoose](https://mongoosejs.com/)
-- [Vue2 Timeago](https://github.com/runkids/vue2-timeago)
+
+### 💾 Project Setup & Installation
+
+1. Open your terminal and in the desired directory, run `git clone https://github.com/CodeMeKathy/24G-Video-Player.git` to clone this project repository to the local machine.
+2. Once cloned, in the terminal run `cd 24G-Video-Player/client` and `npm install` inside the `client` directory. You will have to do this again for the `server` directory.
+3. From the `client` directory, run `cd ../24G-Video-Player/server` and run `npm install`.
+4. In the `24G-Video-Player/server` directory in your terminal, run `node db/seed` to create and seed the database.
+5. In `24G-Video-Player/server` run `mongo` in the terminal to start the MongoDB CLI.
+6. Once the Mongo shell is initialized, run `show dbs` to double-check that your local database was created correctly. One of the results should be `24g-video-player`.
+7. Once all developer dependencies are downloaded, you are ready to get started.
+   - In `24G-Video-Player/client` run `npm run serve` to start the Vue.js dev server.
+   - In `24G-Video-Player/server` run `npm run start` to start the NodeJS dev server.
+8. Visit locally running copy of the Vue.js project at `http://localhost:8080` (or as indicated in the terminal).
 
 ## 🛠️ Technologies Used
 
-- [Vue CLI](https://cli.vuejs.org)
-- [HTML](https://www.w3.org/TR/html52/)
-- [CSS](https://www.w3.org/Style/CSS/)
-- [Bootstrap](https://getbootstrap.com)
-- [BootstrapVue](https://bootstrap-vue.org)
-- [Node Sass](https://www.npmjs.com/package/node-sass)
-- [Sass Loader](https://www.npmjs.com/package/sass-loader)
-- [JavaScript](https://www.javascript.com/)
-- [Express](https://www.express.com/)
-- [CORS](https://www.npmjs.com/package/cors)
-- [NodeJS](https://nodejs.org/)
-- [Nodemon](https://nodemon.io)
-- [Mongoose](https://mongoosejs.com/)
-- [Vue2 Timeago](https://github.com/runkids/vue2-timeago)
-- [Insomnia](https://insomnia.rest)
+- [Vercel](https://vercel.com)
+- [Heroku](https://www.heroku.com/)
 - [Real Favicon Generator](https://realfavicongenerator.net)
 - [Draw.io](https://draw.io)
+- [Insomnia](https://insomnia.rest)
 
-## 📄 Database Schema
+## 📂 Database Schema
 
 ![Mobile Layouts](https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/24G%20Video%20Player%20DB%20Schema.png?raw=true 'Database Video Schema')
 
