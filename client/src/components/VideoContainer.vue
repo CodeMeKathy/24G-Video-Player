@@ -57,8 +57,8 @@ export default {
     return {
       api: `${
         process.env.NODE_ENV === 'production'
-          ? 'https://sparkle-octo.herokuapp.com/'
-          : 'http://localhost:5003/'
+          ? 'https://kl-24g-server.herokuapp.com/'
+          : 'http://localhost:5000/'
       }`,
       videos: [],
       currentVideo: {},
