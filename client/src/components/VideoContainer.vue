@@ -57,7 +57,7 @@ export default {
     return {
       api: `${
         process.env.NODE_ENV === 'production'
-          ? 'https://kl-24g-server.herokuapp.com/'
+          ? 'https://kl-24g-player-server.herokuapp.com/'
           : 'http://localhost:5000/'
       }`,
       videos: [],
