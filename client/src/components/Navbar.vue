@@ -18,13 +18,13 @@ export default {
 <style scoped lang="scss">
 .navbar {
   display: flex;
-  height: 2rem;
+  height: 2.5rem;
   background-color: #009ddb;
   &-title {
     font-family: 'brandon_grotesquelight' !important;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #ffffffa8;
-    font-weight: 100;
+    font-weight: 500;
     align-self: center;
     padding-left: 2.5rem;
     margin-block-end: 0;
@@ -38,12 +38,22 @@ export default {
 
 //! Media Queries
 
-/* Mobile Phones */
+// Mobile Phones
 @media (max-width: 767px) and (min-width: 320px) {
   .navbar {
     height: 5.5rem;
     &-title {
       padding-left: 0.5rem;
+    }
+  }
+}
+
+// XXL Desktop
+@media (min-width: 2560px) {
+  .navbar {
+    height: 3.5rem;
+    &-title {
+      font-size: 1.5rem;
     }
   }
 }

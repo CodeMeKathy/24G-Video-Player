@@ -33,13 +33,14 @@ export default {
     text-transform: uppercase;
     color: #ffffff;
     padding-left: 1.4rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
   }
 }
 
 //! Media Queries
 
-/* Mobile Phones */
+// Mobile Phones
 @media (max-width: 425px) and (min-width: 320px) {
   .section-banner {
     height: 10rem;
@@ -54,6 +55,20 @@ export default {
       padding: 0.5rem 0 0 0;
       margin: 0;
       letter-spacing: 3.5px;
+    }
+  }
+}
+
+// XXL Desktop
+@media (min-width: 2560px) {
+  .section-banner {
+    height: 8rem;
+    &-logo {
+      align-self: center;
+      height: 4rem;
+    }
+    &-title {
+      font-size: 2.3rem;
     }
   }
 }

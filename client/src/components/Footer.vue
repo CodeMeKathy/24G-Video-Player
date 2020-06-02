@@ -25,4 +25,15 @@ export default {
     align-self: center;
   }
 }
+
+//! Media Queries
+
+// XXL Desktop
+@media (min-width: 2560px) {
+  .footer {
+    &-logo {
+      height: 2rem;
+    }
+  }
+}
 </style>
