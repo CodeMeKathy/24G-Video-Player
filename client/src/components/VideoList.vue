@@ -107,7 +107,7 @@ img.video-list-sm-video {
     display: inline-flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0;
+    margin: 0 0 0 -1rem;
   }
 }
 
