@@ -57,7 +57,10 @@ img.video-list-sm-video {
 @media (max-width: 374px) and (min-width: 320px) {
   .video-list {
     &-col {
-      margin-left: 1.5rem;
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0;
     }
     &-row-container {
       flex-direction: row;
