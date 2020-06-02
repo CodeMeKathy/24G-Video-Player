@@ -1,6 +1,5 @@
 <h1 align="center">
-  <img src="" alt="" /> 24G Video Player
-    <img src="" alt="" />
+  24G Video Player
 </h1>
 <h4 align="center">
  A  micro-website video player created with the Vue.js CLI and framework.
