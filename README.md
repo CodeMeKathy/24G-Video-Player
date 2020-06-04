@@ -85,7 +85,7 @@ This project uses [NodeJS](http://nodejs.org), [NPM](https://npmjs.com) and [Mon
 
 ## 📂 Database Schema
 
-![Mobile Layouts](https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/24G%20Video%20Player%20DB%20Schema.png?raw=true 'Database Video Schema')
+![Database Video Schema](https://github.com/CodeMeKathy/24G-Video-Player/blob/master/client/src/assets/24G%20Video%20Player%20DB%20Schema.png?raw=true 'Database Video Schema')
 
 ## 📄 License
 
