@@ -6,7 +6,7 @@
 </h4>
 
 <h5 align="center"> Live Site:
-  <a href="">https://24g-video-player.now.sh</a>
+  <a href="https://24g-video-player.now.sh">https://24g-video-player.now.sh</a>
 </h5>
 
 ## Overview
